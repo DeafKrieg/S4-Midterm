@@ -9,6 +9,24 @@ public class LSearchAndSort {
 		}
 	}
 	
+	static void selectionSort(int[] array){
+		
+		int startScan, index, minIndex, minValue;
+		
+		for(startScan = 0; startScan < (array.length - 1); startScan++){
+			minIndex = startScan;
+			minValue = array[startScan];
+			for(index = startScan + 1; index < array.length; index++){
+				if(array[index] < minValue){
+					minValue = array[index];
+					minIndex = index;
+				}
+			}
+			array[minIndex] = array[startScan];
+			array[startScan] = minValue;
+		}
+	}
+	
 	public static void main(String[] args) {
 		
 			//array to be searched
@@ -18,6 +36,14 @@ public class LSearchAndSort {
 			//perform search
 			//this will find number 13 at positions 8 and 14
 		sequentialSearch(nums, query);
+		
+			//sort
+		selectionSort(nums);
+			//print sorted array
+		for(int x = 0; x < nums.length; x++){
+			System.out.println(nums[x]);
+		}
+		
 		
 	}
 
