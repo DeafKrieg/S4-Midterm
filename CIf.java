@@ -1,5 +1,5 @@
 
-public class cIf {
+public class CIf {
 
 	public static void main(String[] args) {
 
