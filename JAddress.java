@@ -1,4 +1,6 @@
 
+//this class is used in other examples
+
 public class JAddress {
 
 	private String address;
