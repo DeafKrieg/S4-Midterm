@@ -4,7 +4,7 @@ public class FDecimalFormat {
 
 	public static void main(String[] args) {
 		
-		
+			//formatter
 		DecimalFormat dollar = new DecimalFormat("0.00");
 		
 		double dollarAmount2 = 100.51010;
